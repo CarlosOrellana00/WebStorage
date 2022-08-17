@@ -43,21 +43,21 @@
 
       btnGuardar.addEventListener('click',()=>{
         let val = document.getElementById("valorInput").value;
-        localStorage.setItem("valorEnLS",val);
+        sessionStorage.setItem("valorEnLS",val);
         document.getElementById("valorInput").value = "";
       });
 
       btnCargar.addEventListener('click',()=>{
-        let val = localStorage.getItem("valorEnLS");
+        let val = sessionStorage.getItem("valorEnLS");
         document.getElementById("valorDesdeLS").innerHTML = val;
       });
 
       btnBorrar.addEventListener('click',()=>{
         document.getElementById("valorDesdeLS").innerHTML = "";
         //remover solo una variable
-        localStorage.removeItem("valorEnLS");
+        sessionStorage.removeItem("valorEnLS");
         //limpiar todo
-        // localStorage.removeItem.clear;
+        // sessionStorage.removeItem.clear;
       });
 
 
