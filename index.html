@@ -51,6 +51,16 @@
         let val = localStorage.getItem("valorEnLS");
         document.getElementById("valorDesdeLS").innerHTML = val;
       });
+
+      btnBorrar.addEventListener('click',()=>{
+        document.getElementById("valorDesdeLS").innerHTML = "";
+        //remover solo una variable
+        localStorage.removeItem("valorEnLS");
+        //limpiar todo
+        // localStorage.removeItem.clear;
+      });
+
+
     </script>
   </body>
 </html>
