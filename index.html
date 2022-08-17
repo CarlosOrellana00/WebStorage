@@ -38,7 +38,7 @@
     <script>
       btnGuardar.addEventListener('click',()=>{
         let val = document.getElementById("valorInput").value;
-        alert(val);
+        localStorage.setItem("valorEnLS",val);
       });
     </script>
   </body>
